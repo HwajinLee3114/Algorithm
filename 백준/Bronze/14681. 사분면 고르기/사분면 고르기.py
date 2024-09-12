@@ -1,6 +1,4 @@
 a = int(input())
 b = int(input())
-if a > 0 and b > 0: print(1)
-elif a < 0 and b > 0: print(2)
-elif a < 0 and b < 0: print(3)
-else: print(4)
+if a * b > 0: print(1 if a > 0 else 3)
+else: print(4 if a > 0 else 2)
