@@ -9,8 +9,7 @@ for i in range(1, N + 1):
     p, k = map(int, input().split())
     tmp = k - p + 1
     if exp_val < tmp:
-        exp_val = tmp
-        exp = i
+        exp_val, exp = tmp, i
     elif exp_val == tmp and exp > i:
         exp = i
     for j in range(p, k + 1):
@@ -18,8 +17,7 @@ for i in range(1, N + 1):
 for i in range(1, N + 1):
     tmp = cake.count(i)
     if real_val < tmp:
-        real_val = tmp
-        real = i
+        real_val, real = tmp, i
     elif real_val == tmp and real > i:
         real = i
 print(exp)
