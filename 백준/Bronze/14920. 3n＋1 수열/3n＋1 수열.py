@@ -5,8 +5,5 @@ n = 1
 
 while c != 1:
     n += 1
-    if not c % 2:
-        c = c // 2
-    else:
-        c = 3 * c + 1
+    c = c // 2 if not c % 2 else 3 * c + 1
 print(n)
